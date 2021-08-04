@@ -2,7 +2,7 @@ package handler
 
 import "fmt"
 
-// type error values
+// type example values
 // por convención, terminan con Error.
 
 type InvalidModelError struct {
@@ -21,7 +21,7 @@ func NewInvalidModelError(name string, code int, err error) InvalidModelError{
 
 func (e *InvalidModelError) Error() string {
 	if e.errorCode == 0 {
-		return fmt.Sprintf("invalid model error code")
+		return fmt.Sprintf("invalid model example code")
 	}
 
 	return fmt.Sprintf("the value %s with code %d is invalid", e.name, e.errorCode)

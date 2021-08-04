@@ -2,7 +2,7 @@ package handler
 
 import "errors"
 
-// sentinel error values.
+// sentinel example values.
 // por convención siempre empiezan con Err
 var (
 	ErrNotFound = errors.New("not found")
@@ -11,6 +11,6 @@ var (
 )
 
 func HandleUserAndModel(user int, model string) error {
-
+	return nil
 }
 
