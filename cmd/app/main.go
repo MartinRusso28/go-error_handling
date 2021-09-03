@@ -11,9 +11,7 @@ import (
 func main() {
 	server := http.NewServeMux()
 
-	searchAnimalHandler := handler.SearchAnimal
-
-	server.Handle("/animal", middleware.Error(searchAnimalHandler))
+	server.Handle("/animal", middleware.Error(handler.SearchAnimal))
 
 	fmt.Println("Starting server at port 8080")
 
