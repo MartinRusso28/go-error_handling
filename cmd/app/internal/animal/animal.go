@@ -6,7 +6,7 @@ import (
 	"fmt"
 )
 
-var authorizedUsers = []int{1,22,333}
+var authorizedUsers = []int{1,22,333, 99}
 
 type Getter interface {
 	Search(ctx context.Context, code string) (string,error)
